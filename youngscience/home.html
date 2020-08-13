@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords"
+  content="HTML, CSS, Javascript">
+  <meta name="description"
+  content="free physics tutorial">
+    <meta name="author"
+    content="Abdull Maxwizard">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="refresh"  content="1000">
+  </head>
+<style>
+body{height: 100vh;
+width: 100vw;
+margin-top: 0px;}
+.navigationWeb{
+width: 100%;
+height:95%;
+margin-top: 0px;
+margin:12px;}
+
+.navs {
+    
+    margin: 0px;
+    padding: 0  ;
+    margin-top: 22vh;
+    width: 20%;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+}
+ul{list-style-type: none;}
+
+li a {
+    display: block;
+    color: #aa2000;
+    padding: 2px 0 2px 4px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.active {
+    background-color: #555;
+    color: white;
+    width: 25vw;
+}
+#active{
+color: white;}
+
+#menu{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    margin-top: 0px;
+    background:linear-gradient(to bottom left, black,#a3333a,pink);
+    height: 5vh;
+    font-size: 19px;
+    color: white;
+    text-align: left;
+    overflow: auto;}
+    #menu a.active {
+    background-color: #A55;
+    color: white;
+    width: 5vw;
+}
+.linking{color: white;
+  padding: 8px 0 8px 16px;
+}
+
+ #menu a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+span{margin-left: 23px;}
+
+#heade{background: linear-gradient(to bottom ,pink,#a3333a);
+ color: white; 
+ text-align:left;
+ margin-bottom: 0px;
+ position: fixed;
+height: 19vh;
+width: 100vw;}
+#subject{font-size: 66px;}
+.page{margin-left:25%;
+  margin-right: 5%;
+  padding:1px;margin-top:-67vh;}
+  #program,#physics{margin: 2px;
+    margin-top: 0px;}
+    #homepage{margin-top: -70vh;
+      margin-left: 25%;}
+      .linking:hover{
+    background-color: #555;
+    color: white;}
+    #revise,#howtofactorix{color:blue;}
+    #fact,#form,#comp,#abdu,#grap{color:blue;}
+    #heading{background:linear-gradient(to bottom right,#a3333a,pink);
+      height: 8vh;
+      margin:0px;}
+
+      #container{background: #4488aa;color: white;
+      height: 65vh;}
+    input{width: 40vw;
+      height: 5vh;
+      margin-bottom: 1vh;}
+      #sumit{background: yellow;
+        color:black;
+        width: 25vw;
+        height: 6vh;
+        border-radius: 30% 30% 30% 30%;
+        font-size: 26px;}
+        #p1{background:purple;
+        color: white;
+        font-size: 41px }
+        p{font-size: 20px;}
+        #game{background: #bbb;
+          padding-left: 2vw;
+         }
+          #realnumber,#counter{display: none;}
+          #alerm{background: purple}
+          #input,h1{font-size: 25px;}
+          #grade{
+    font-size:45px;
+    color: gold;
+    font-weight:bold;
+    font-family:cursive;
+    text-align:center;
+    background-color:green;
+    margin:0 auto;
+    width:30vw;
+    display: none;
+    margin-top: 25px;
+    border-radius:10px;
+    animation-name:ak;
+    animation-direction:alternate;
+    animation-duration:10s;
+    animation-iteration-count:6;
+}
+@keyframes ak{
+    0%{
+        transform:scale(0)rotate(0deg);
+        background-color:red;
+        color:white;
+    }
+    20%{
+        transform:scale(1);
+        background-color:blue;
+        color:pink;
+    }
+    40%{
+        transform:scale(0)rotate(0deg);
+        background-color:green;
+        color:red;
+    }
+    60%{
+        transform:scale(1);
+        background-color:pink;
+        color:purple;
+    }
+    80%{
+        transform:scale(0)rotate(0deg);
+        background-color:yellow;
+        color:black;
+    }
+    100%{
+        transform:scale(1);
+        background-color:orange;
+        color:red;
+    }
+    
+}
+#trygameagain{border-radius: 25%;
+color: red;
+background:pink;width: 50%;
+font-size: 35px;
+display: none;
+text-align: center;
+margin-left: 16vw;
+}
+h3{font-size: 33px;
+margin: 0px;}
+#shift{margin-left: 3vw;}
+</style>
+</head>
+<body>
+<div class="navigationWeb">
+  <div id="heade">
+    <p id="heading">
+    <b style="text-align: center; margin-left:2px; font-size: 40px;">Young Scienstist Builder</b>
+    <br id="subhead"> The Best Classroom<br>
+  </p>
+    <h1 style="height: 6vh; margin:10px;">Best ever online tutorial for learners And young scienstist</h1>
+    <div id="menu">
+        <span><a class="linking"  href="#home">Home</a></span>
+        <span><a class="linking" href="#Education">Education</a></span>
+        <span><a class="linking" href="#Activities">Activities</a></span>
+        <span><a class="linking" href="#Careers">Careers</a></span>
+        <span><a class="linking" href="#Policy">Policy</a></span>
+        <span><a class="linking" href="#game">Game</a></span>
+        <span><a class="linking" href="#Resources">Resource</a></span>
+        <span><a class="linking" href="#News">News</a></span>
+        <span><a class="linking" href="#contact">Contact</a></span>
+        <span><a class="linking" href="#about">About</a></span>
+  </div>
+</div>
+<div class="navs">
+<ul  class="navig" id="homenav">
+  <li><a class="navigate" href="#home" class="active">COURSES</a></li>
+  <li><a class="navigate" href="#math">Mathematics</a></li>
+  <li><a class="navigate" href="#eng">English</a></li>
+  <li><a  class="navigate" href="#physics" >Physics</a></li>
+  <li><a class="navigate" href="#chem">Chemistry</a></li>
+  <li><a class="navigate" href="#Bio">Biology</a></li>
+  <li><a class="navigate" href="#Further">Further Maths</a></li>
+  <li><a class="navigate" href="#Programming" >Programming tutorial</a></li>
+  <li><a class="navigate" href="#Graphic">Graphic and Design</a></li>
+  <li><a class="navigate" href="#Geography">Geography</a></li>
+</ul>
+<ul class="navig" id="mathnav">
+  <li><a class="active">MATHS TOPICS</a></li>
+<li><a> Numbers</a></li>
+   <li><a href="#real numbers"> Real numbers and number bases</a></li> 
+    <li><a href="#Indicies & log"> Indicies and Logarithms</a></li>
+    <li><a href="#partial fractions"> Partial fractions</a></li>
+  <li><a href="#quadratic"> Quadratic equations</a></li>
+  <li><a  href="#Sequence and series">Sequences and series</a></li>
+   <li><a href="#Mathematical induction"> Mathematical induction</a></li>
+   <li><a href="#Permutation"> Permutation and combinations</a></li>
+   <li><a href="#Matrices"> Matrices</a></li>
+   <li><a href="#trigonometry"> trigonometry</a></li>
+   <li><a href="#set theory">  Set theory</a></li>
+  <li><a href="#Polynomials">Polynomials</a></li>
+  </ul>
+  <ul class="navig" id="Physics">
+    <li><a class="active">PYSICS TOPICS</a></li>
+    <li><a>D-Kinematics</a></li>
+   <li><a>Newton's Laws</a></li>
+  <li><a>Vectors-Motion and Forces In Three Dimensions</a></li>
+  <li><a>Momentum and its Conservation</a></li>
+  <li><a>Work,Energy and Power</a></li>
+  <li><a>Circular Motion and Satelite Motion</a></li>
+  <li><a>Thermal Physics</a></li>
+  <li><a>Static Electricity</a></li>
+    <li><a>Electric Circuits</a></li>
+     <li><a>Viberations and Waves</a></li>
+  <li><a>Sound Waves and Music</a></li>
+    <li><a>Light Waves ans Color</a></li>
+  </ul>
+  <ul class="navig" id="chemistry" >
+  <li><a class="active">CHEMISTRY TOPICS</a></li>   
+<li ><a>The Study of Matter</a></li>
+<li><a> The Atom</a></li>
+<li><a>The Periodic Table</a></li>
+<li><a> Chemical Compounds and Bonding</a></li>
+<li><a>  Chemical Quantities and Reactions</a></li>
+<li><a>Chemical Nomenclature</a></li>
+<li><a>Gases</a></li>
+<li><a>Acids and Bases</a></li>
+<li><a>Water and Aqueous Solutions</a></li>
+  </ul>
+  <ul class="navig" id="program">
+  <li><a class="active">HTML and CSS</a></li>
+<li><a>Learn HTML</a></li>
+<li><a>Learn CSS</a></li>
+<li><a>Learn Colors</a></li>
+<li><a>Learn Bootstrap</a></li>
+<li><a>JavaScript</a></li>
+<li><a>Learn JavaScript</a></li>
+<li><a>Learn jQuery</a></li>
+<li><a>Learn jQueryMobile</a></li>
+<li><a>Learn AppML</a></li>
+<li><a>Learn AngularJS</a></li>
+<li><a>Learn JSON</a></li>
+<li><a>HTML Graphics</a></li>
+<li><a>Learn Canvas</a></li>
+<li><a>Learn SVG</a></li>
+  </ul>
+</div>
+</div >
+<div class="page" id="homepage">
+<h1>QUADRATIC EQUATION</h1>
+<p>In this section, I am going to teach you how to solve quadratic equation just keep reading I guanrantee you that you will understand it without a visible teacher.
+<br> Are you ready to go? Are you sure? ready to learn? then let’s go into the course!
+<br>Firstly, what is quadratic equation? You know this is a kind of equation of power of 2. It is usually in the  form of the following  </p>   
+ <p>aX<sup>2</sup>+bX+c. where a, b and c are real number.<br> 
+<em>Note:</em> before an equation will be called quadratic there should be a variable with the power of 2.<br>
+ To solve quadratic there are different kind of method that could be used and these are;
+</p>
+  <ul>
+<li><a class="linking" id="fact" href="#factorization">FACTORIZATION</a></li>
+<li><a class="linking" id="comp" href="#completing-the-square">COMPLETING THE SQUARE</a></li>
+<li><a class="linking" id="form" href="#formular">FOMULAR</a> </li>
+<li><a class="linking" id="grap" href="#graphical">GRAPHICAL METHOD</a> </li>
+<li><a class="linking" id="abdu" href="#abdull">ABDULL’S LOGIC</a></li>
+</ul>
+to be continue...
+</div>
+<div class="page" id="factorization">
+  <p class="topic">FACTORIZATION METHOD</p></p>
+<p>This is the commonest method used in solving many quadratic equation only that it doesn’t solve all.<br> As you can see by the name factorization has something to do with factorize. 
+<br>Now let me teach you how to factorize. To factorize all you need to know is addition,<br>subtraction , multiplication and. And who doesn’t learn how to do that in primary school? Yeah, nobody. 
+<br>But incase you happen to have not known it please go back to your primary school note to do revision. <br>Already lost? Then you can try to read this <a id="revise" class="linking" href="#">revision</a><br>Now I believe you have understand addition,subtraction,multiplication and division if not go back and read revision before proceeding.</p>
+<p> Like I said ealier to solve quadratic with this method the most important thing you should know is how to factorize and who doesn't know that ? nobody!oh! sorry, except those who had never learn that and if you happened to be one of them then read this <a id="howtofactorix" class="linking"
+ href="#howtofactorize">factorization</a> and come back here later otherwise continue reading.If you had truly understand how factorization work then to solve quadratic with it is now a piece of cake.
+ <br>
+Let’s start with the following examples<br>
+Examples<br>
+Solve the following quadratic equations<br>
+<ol>
+<li> x2+5x+6=0</li>
+<li> 2x2-11x+12=0</li>
+<li> x2-19x+48=0</li>
+<li> -4x2+12x-9=0</li>
+<li> –x2-3x-2=0</li>
+</ol>
+<P>SOLUTION<br>
+Example 1<br>
+Firstly lets factorize the equation<br>
+X2+5x+6=0<br>
+X2+2x+3x+6=0 (don’t forget to always put equal to zero after it)<br>
+X(x+2)+3(x+2)=0<br>
+(x+2)(x+3)=0   (now here we go by equating each of the things in bracket to 0)<br>
+X+2=0<b id="shift">x+3=0 (collect the like terms)</b> <br>
+X=0-2<b id="shift"> x=0-3</b><br>
+X=-2 <b id="shift">x=-3 (and that is the answer)</b>
+</P>
+<p>Example 2<br>
+ 2x2-11x+12=0<br>
+2x2-8x-3x+12=0  (factorize each of the half part)<br>
+2x(x-4)-3(x-4)=0 (factorize completely)<br>
+(x-4)(2x-3)=0   (equate each of the bracket to zero<br>
+x-4=0,<b id="shift">2x-3=0 (collect the like terms)</b ><br>
+x=0+4,<b id="shift">2x=0+3 (remember the sign change as soon as it crosses the equal to)</center><br>
+x=4, &nbsp;&nbsp;<b id="shift"> 2x=3</b>><br>
+  (equation one is solved but we have to finished the other by dividing bothside by the coefficient of x  which is 2)
+2x/2=3/2<br>
+X=1.5.
+<p>
+Example 3<br>
+x2-19x+48=0<br>
+X2-16x-3x+48=0<br>
+x(x-16)-3(x-16)=0<br>
+(x-16)(x-3)=0<br>
+x-16=0<b id="shift">x-3=0</b>
+x=0+16<b id="shift">x=0+3</b>
+x=16 <b id="shift">x=3</b></p>
+<p>
+Example 4<br>
+ -4x2+12x-9=0<br>
+-4x2+6x+6x-9=0<br>
+(2x-3)(-2x+3)=0<br>
+2x-3=0<b id="shift">-2x+3=0</b>
+2x=0+3<b id="shift">-2x=0-3</b>
+2x=3  <b id="shift">-2x=-3</b>
+2x/2=3/2 <b id="shift">-2x/-2=-3/-2</b>
+X=1.5<b id="shift">x=1.5</b></p>
+<p>
+Example 5 
+ –x2-3x-2=0
+-x2-x-2x-2=0
+-x(x+1)-2(x+1)=0
+(x+1)(-x-2)=0
+X+1=0      -x-2=0
+X=0-1        -x=0+2
+X=-1         -x=2 (dividing bothside by -1 sothat x wont have any minus)
+X=-1         x=-2
+</p>
+<p>
+Example<br>
+X2-4x=0(this look very interesting as we only have two things so just factorize directly)<br>
+X(X-4)=0 (as you can see that x is common to both )<br>
+Now you would ask how to equate them now very simple just write this<br>
+X=0<b id="shift">X-4=0  => now x=0+4</b><br>
+Now I assume you have now understand how to solve quadratic equation using factorization method? If yes then try to solve the following question.<br>
+<ul>
+<li>X+2x+1=0</li>
+<li>X2-14x+24=0</li>
+<li>3X2+5x-2=0</li>
+<li>-5x2-3x+2=0</li>
+<li>5x2+3x-2=0</li>
+</ul>
+Click <a>here</a> to read some logical fact about factorization.<br>
+All quadratic look like ax2+bx+c where a, b, c is are real number<br>
+Now everytime you were given an equation check all the value of a b and c it state the secret below
+<p>Secret 1:<Br>
+If the product of a and c is is negative and the value of your b is negative then 
+the two number  you are trying to guess will be one positive and the other negative.
+Also the negative one will be greater than the positive one </p>
+<p>Secret 2:<br>
+If the product of a and c is negative and the value of your b is positive then
+ the two number you are trying to guess will be one positive and the other negative.
+Also the positive one will be greater than the negative one.</p>
+<p>Secret 3: <br>
+If the product of of a and c is positive and the value of b is negative then
+The two numbers you are trying to guess wil be negative and negative</p>
+<p>Secret 4: <br>if the product of a and c is positive and the value of b is positive then
+The two numbers you are trying to guess will be positive and positive.</p>
+<p>SUMMARY<br>
+The negative product implies positive and negative guess while b tell if the bigger number will be positive or negative!
+The positive product implies both positive or both negative while b tells the right one ie both positive or both negative.
+Bear all these secret in mind and enjoy!
+
+</p>
+</div>
+<div class="page" id="completing">
+  <p>COMPLETING THE SQUARE</p>
+<p>This is the ancient method used in solving quadratic equation infact can solve all quadratic 
+equation. as you can see by its name it has something to do with square. now this is how it work</p>
+<br>example:
+<p>solve the following quadratic using completing the square method 
+<ol>
+<li>X<sup>2</sup>+3x-1</li>
+<li> X<sup>2</sup>-4x+3</li>
+<li> -4X<sup>2</sup>+12x-9</li>
+</ol></p>
+<p>Solution:<br>
+firstly note that to solve quadratic complete the square you </p>
+to be continue...
+</div>
+<div class="page" id="formular">
+  <p class="topic">FORMULAR</p>
+<p>This is the best method used in solving all quadratic equation it only required value of variable from the quadractic ie the value of a,b and c. it is popularly known as almighty formular and sometimes called schreedar acryas formula. the formular below is used to solve quadratic.<br>
+x=-b+b<sup>2</sup>-4ac}/2a
+where a,b and c is the co-efficent of x<sup>2</sup>,x and constant.<br>Now let's try to solve some quadratic equations using formular method.</p>
+<p>solve the following quadratic using completing the square method 
+<ol>
+<li>X<sup>2</sup>+3x-1</li>
+<li> X<sup>2</sup>-4x+3</li>
+<li> -4X<sup>2</sup>+12x-9</li>
+</ol></p>
+<p>Solution:<br>
+  for question 1, compare ax+bx+c to the question above you can conclude that
+  <br>a=1, b=3, c=-1.
+  so input that into the formular and get the value of x.
+  <br>to be continue...
+</div>
+<div class="page" id="graphical">
+  <p class="topic">GRAPHICAL</p>
+<p>this is the mathematicans tools or method use in solving most problem by representing the problem in graghical way. thereby we can easily get our answer to any problem on the graph.</p>
+</div>
+<div class="page" id="abdull">
+  <p class="topic">ABDULL's Logic</p>
+  <p>This method is the my best method use to solve quadratic in your brain without even writing 
+  anything only that it can solve all qudratic equation but any any quadratic that can be solve by
+   factorisation this method will solve it. <br>To use this method you have to guess the two factor
+  that satisfied the equation if you were to use factorization i.e the two number multiply together
+   to give the constant and its addition gives the coefficient of x.</p>
+   to be continue...
+</div>
+
+<div class="page" id="revision">
+  <p>REVISION:
+        <br>Answer the following brain booster question</p>
+<ol>
+<li>  Read multiplication table one to twenty.  Good! Read it again.</li>
+<li>  What is "3*7"? &nbsp; 7*3? &nbsp;Stop thinking again it means the same thing okay?</li>
+<li>  What is 12*5? Yeah 60. What of 8*9? 9*8 ? good of you!</li>
+<li>  Now what is -3*7? -8*-8? 2*-9? -12*-12? You are confused right? </li>
+</ol>
+  <p> Alright take this abdull’s reminder.</br>
+Minus (-) is denoted by enemy <br>
+Plus (+) is denoted by friend <br>
+Now, always read abdull’s reminder :<br>
+ Friend of your friend is your friend i.e (+*+=+) <br>
+Friend of your enemy is your enemy i.e(+ * - = -)<br>
+Enemy of your friend is your enemy ie (-*+=-)<br>
+Enemy of your enemy is your enemy ie(-*-=+)<br>
+Now your friends enemy  is what? Eh? Again ? Yeah, your enemy.<br>
+ Now use it to solve the equation above.<br>
+  -3 means 3enemies and 7 is 7 friends multiply it together you have 21 enemies of your friend<br> and what does that means? 21enemies! So use the same logic for the rest.<br>
+That is that about multiplication. Now let’s quickly go to addition and subtraction.<br>
+ Shall we? Eh eh? You like primary half work! Okay let’s go to the place.<br>
+Try the following glucose <br>
+<ol>
+<li>  2+5? 34+5? 76+45?</li>
+<li>  45-34? 99-67?</li>
+<li>  9-12? 56-78? 34-56? 88-900? (they are all negative answer)</li>
+<li>  3+-4? -34-23? -23+-23? -23--23?</li>
+  </ol>
+<br>It look like that number 3 and 4 seems confused. Right? Alright take this logic to get it.<br>
+You know those problem above is like math war which always follow one principle which is;</p>
+ <p>"soul for soul, kill me I kill you " now let’s start the application <br>
+For question 3, 9-12 simply means you have 9friends and 12 enemies in the game. <br>
+So with  respect to the principle 9friends kill 9enemies and the 9enemies kill 9friends. 
+<br>Now what did you have in the end?<br>
+ Yeah just 3enemy still left for they are more than your friend and that is written as -3 understand?<br> Then 56 -78 means 56 friends and 78 enemies. Play the game what do you have left? Yeah 22enemies (-22).
+ <br> What of 34 friends and 56 enemies? Eh? Yeah, unconquered 22 enemies! (-22)
+ <br> For question 4 now. 3friends and 4enemies? Yeah idiotic one enemy (-1).
+ <br> Then the next question simply means 34enemy and 23 enemies and guess what? Your enemies<br> increase for enemy will not kill enemy. So you have wonderful 57 enemies (-57). 
+ <br>Now 23 enemies and 23 enemies gives 46enemies (-46). So for the last -23 means 23enemies<br>
+  and –23 means 23 enemies of your enemies, using abdulli’s you notice It means friend.<br>
+ So you have 23 friends. Now 23enemies and 23 friends in math game gives what? Yeah! Beautiful zero!
+ <br> Now I believe you have now understand the principle of addition and subtraction in collaboration with multiplication.</p>
+<p>Now try to play the following game :<br>
+<ul>
+<li>  What is that two number that you multiply together to get 30 and their sum is<br>
+(i) 13           (ii) -13             (iii) 11    ( iv)-17                       (v) -11</li>
+<li>  Adding two number together I get -3 multiply it together I get <br>
+(i) 2             (ii) -10              (iii)- 45           (iv) -40</li>
+</ul>
+Now how would you do that ? very simple just try to use your multiplication table 
+For number one <br>just think of two number   you can multiply to get 13 that is 1 and 13 notice that 
+<ul>
+  <li>1*30=30</li>
+ <li> -1*-30=30</li>
+ <li>2*15</li>
+ <li> -2*-15=30</li>
+ <li>3*10=30</li>
+ <li>-3*-10=30</li>
+ <li>6 *5=30</li>
+ <li>-6*-5=30</li>
+</ul>
+
+<p>That is how to split now let answer the question <br>
+Add each of the above number and let us see the one that has the exactly sum.<br>
+31,-31, 17,-17,13,-13,11,-11. Are the addition of each of them respectively now you can choose your answer for each of the question now.<br>
+<p>But if you find it difficult to think of the two number to be multiply to get your number then read this maxwizard approach below. Did you wish to know it? Are you sure? Let us take a look at it.
+</p>
+<p>Firstly know that you are looking for two numbers. Now since you are given the sum and the product of the number. Then u let the sum be "b" and the product be "p"
+ <br>U=√(s^2-4p) so you use this formula to get your u then <br>
+A= ( s-u)/2 and B= (s+u)/2<br>
+Where A and B are the two number you are  looking for. Now let us use it to solve the question above.
+<br>
+From the question above p=30 b=-17<br>
+ so u=√(-17)^2-4*30 =√289-120=√169=13<br>
+Now u=13 so A=-17-13/2=-30/2=-15 (since A= ( s-u)/2)<br>
+ B=-17+13/2=-4/2=-2 (since B= (s+u)/2) <br>
+ So the two number multiply to get 30 and add up to -17  are -15 and -2 did you understand? Alright let try another one now.<br>
+  For question 2 addition is 17 and product is 30. So p=30 and b=17 <br>
+Since u=√b^2-4c =√17^2-4*30=√289-120=√169=13 <br>
+         A=17-13/2=4/2=2<br>
+        B=17+13/2=30/2=15<br>
+Therefore the two numbers are 2 and 15. Did you now understand? Now try to get the rest. 
+
+</p>
+to be continue...
+</div>
+<div class="page" id="howtofactorize">
+  <p>FACTORIZATION <br>
+Now that you have understand how to get the two number then this one will be easier for you now let me give you example on this<br>
+ Examples<br>
+Factorize the following <br>
+1.  X^2+3x-18<br>
+2.  X^2-4x+3<br>
+3.  -4X^2+12x-9<br>
+<p>Example 1<br>
+To factorise you think of that two number added up to 3 and multiply to give -18<br>
+And that is what? Yeah use anyone of the method I thought you to get it. You will get 6 and -3<br>
+Now that two number will be used to factorize question one <br>
+So -3 and 6 will be written as -3x and 6x<br>
+x^2+3x-18<br>
+x^2+6x-3x-18 <br>
+X2 +6x-3x+18 &nbsp;&nbsp;now as you can see there are now four items then group it into two and <br>
+X(x+6)-3(x+6)&nbsp;&nbsp; factorize but don’t forget that to factorize you have to get you have to know 
+<br>(X+6)(x-3)&nbsp;&nbsp;the topic called HCF very well so that you don’t make mistake if you had know 
+                                it well continue reading but if you have not just go back to the beginning 
+                               where I explain factorization before continue this. 
+                                Now let us try to factorize it 
+Done!
+
+Xxx18
+X(x+6)-3(x+6)
+(X+6)(x-3)
+Done!
+
+Example 2
+The coefficient of x is -4,that of x2 is 1 and the one without x is 3. So what is 1*3? i.e our sum is -4 and product is 3.
+So think of the two number that could be add up to -4 and it product will be 3. What is it ? umh? No!  Both of the number will be negative. It is -3 and -1. Now solve the question    
+X^2-4x+3
+X2-x-3x+3
+X(x-1)-3(x-1)
+(x-1)(x-3)
+q.e.d
+   Example 3
+    Looking at question 3 coefficient of x3=-4,x=12 and the one without x is -9. 
+-4 *- 9 is what ? yeah 36 without negative. Now think of that two number as usual sum equal 12 and product is 36. Yes 6 and 6 without minus. Proceed and solve the question
+-4X^2+12x-9
+-4x2+6x+6x-9                  (now find the hcf of each of the two part)
+-2x(2x-3)  + 3(2x+3)       (notice what is in the each bracket is the same)
+(2x-3)(-2x+3)
+Done !
+
+Exercise 
+Factorize the following :
+1. 2t2+13t-15      (hint: one is positive while the other is negative)
+2. x2-11x+24
+3. 6x2-19x+8
+4. 4x2-12x+9
+5. –x2-3x-2
+Good luck! 
+
+</div>
+<div class="page" id="Education">ALL EVERYTHING ABOUT EDUCATION HOW IT IS GOING WILL BE WRITTEN LATER</div>
+<div class="page" id="Activities">HERE I AM GOING TO WRITE ALL THE ACTIVITIES ON OUR WEB</div>
+<div class="page" id="Careers">DIFFERENT KIND OF CAREER WILL BE HERE</div>
+<div class="page" id="Policy">YOU CAN READ OUR POLICY HERE</div>
+<div class="page" id="game">
+<p id="p1">Number guessing game </p>
+<p>Try and guess a random number from 1 and 100<br>You have 10attempts to guess the right number</p>
+<div id="container">
+  <h1>GUESS A NUMBER</h1>
+<input type="text" value="click here to write guess" id="input" ><br>
+<input id="sumit" type="button" onclick="navigation.gameSubmit()" value="submit guess">
+<h1 id="grade">YOU WON</h1>
+<h3> Previous guess:0</h3><h3> guess remaining:10</h3>
+<h2 id="alerm"></h2>
+<input id="trygameagain" type="button" value="Play again" onclick="navigation.trygameagain()">
+<h4 id="realnumber"></h3>
+<h4 id="counter">10</h4>
+
+</div>
+</div>
+<div class="page" id="Resources">ALL DIFFERENT KIND OF RESOURCES U MIGHT NEED</div>
+<div class="page" id="news">EVERY NEWS TO GET YOU UPDATE ON OUR WEBSITE WILL BE WRITTEN LATER</div>
+<div class="page" id="contact">OUR CONTACT ON FACEBOOK,WHATSAPP,HISTAGRAM AND PHONE NUMBER WILL BE HERE LATER</div>
+<div class="page" id="about">EVERY THING ABOUT OUR WEBSITE WILL BE WRITTEN HERE LATER</div>
+<script>
+  var navigation={//this opennav is to open everything on the left navigation 
+ opennav:function(activenavig) {
+ var x = document.getElementsByClassName("navig");
+   for (var i = 0; i<x.length; i++) {
+    x[i].style.display = "none";
+  }
+document.getElementById(activenavig).style.display="block";
+  },
+  //this is a function to open the page will want to see
+  openpage:function(activepage) {
+ var x = document.getElementsByClassName("page");
+   for (var i = 0; i<x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(activepage).style.display="block"},
+  // to monitor the clicking event on the top menu so that it goes to the page on every click
+clickpage:function(i,page){var page=page;
+  document.getElementsByClassName("linking")[i].addEventListener("click",function(){
+    navigation.openpage(page)})},
+  //function to monitor the left navigation event so as to open sub navigation
+  clicknav:function(i,page){var navl=page;
+  document.getElementsByClassName("navigate")[i].addEventListener("click",function(){
+    navigation.opennav(navl)})},
+// function for the homepage to place everything back to home
+  home:function(){
+    document.getElementsByClassName("linking")[0].addEventListener("click",function(){
+      document.getElementsByClassName("linking")[0].click();
+      document.getElementsByClassName("navigate")[0].click();})},
+    //to give welcoming message on clicking the game menu
+ 
+  game_alert:function(){
+    document.getElementsByClassName("linking")[5].addEventListener("click",function(){
+      alert("how about playing a random guessing game? just input your number and press submit");
+  alert("look at the result below it input another number untill your chances run out");
+    })},
+    //to make the page to reload on clicking the try again
+    trygameagain:function(){history.go(0);
+    },
+    //function to make the window check if the guess is right or wrong
+   gameSubmit:function(){
+  var previo=0;
+     var remain=10;
+    var input=document.getElementById('input').value;
+  var realnum= document.getElementById('realnumber').innerHTML;
+     var counter=document.getElementById('counter').innerHTML;
+    var x=eval(counter-1);//this is the counter1
+     var y=eval(10-x);//our counter2
+     var counter=document.getElementById('counter').innerHTML=x;
+     document.getElementsByTagName('h3')[0].innerHTML="Previous guess:"+y;//previous guess counter
+     document.getElementsByTagName('h3')[1].innerHTML="guess remaining:"+x;//remains guess counter
+if(x<1){
+  document.getElementById('alerm').innerHTML="Game Over! you loose<br>"+"the answer is "+number;
+     document.getElementById('grade').innerHTML="YOU LOOSE";
+     document.getElementById('grade').style.display="block";
+     document.getElementById('trygameagain').style.display="block";
+      }
+     else{
+    if(input>number){document.getElementById('alerm').innerHTML="Too High Try again!"}
+  else if(input==number){document.getElementById('alerm').innerHTML="Correct! You got it!";
+         document.getElementById('you').style.display="block";
+     document.getElementById('try').style.display="block";}
+    else{document.getElementById('alerm').innerHTML="Too Low Try again!"}
+      
+  }
+  },
+display:function(){
+var pages=['homepage','Education','Activities','Careers','Policy','game','Resources','news',
+'contact','about','factorization','completing','formular','graphical','abdull','revision',
+'howtofactorize'];
+var navleft=['homenav','mathnav',"english",'Physics','chemistry','Biology','Further','program',
+'Geography'];
+  for (var i=0;i<pages.length;i++){navigation.clickpage(i,pages[i]);
+   }
+  for (var i=0;i<navleft.length;i++){navigation.clicknav(i,navleft[i]);
+    }
+    navigation.home();
+    navigation.game_alert();
+    document.getElementsByClassName("linking")[0].click();
+  }
+};
+//we need to call all the function to work on the page 
+navigation.display();
+var input=document.getElementById('input').value;
+  var number=Math.floor(Math.random()*100);
+  document.getElementById('realnumber').innerHTML=number;
+document.getElementsByClassName("linking")[0].click();
+
+</script>
+</body>
+</html>
